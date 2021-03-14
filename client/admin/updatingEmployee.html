@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Update Employee</title>
+		<link
+			rel="stylesheet"
+			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+			integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+			crossorigin="anonymous"
+		/>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg navbar-dark bg-primary mb-4">
+			<a class="navbar-brand" href="index.html">Employee Management System</a>
+			<a href="#" class="ml-auto text-light" id="logout">Logout</a>
+		</nav>
+		<div class="container">
+			<div
+				class="alert alert-warning alert-dismissible fade show"
+				role="alert"
+				id="loginFormAlert"
+			>
+				<div id="errorsDiv"></div>
+				<button
+					type="button"
+					class="close"
+					data-dismiss="alert"
+					aria-label="Close"
+				>
+					<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<main>
+				<form id="formForupdatingEmployee">
+					<div class="form-group">
+						<label for="name">Employee Name</label>
+						<input
+							type="text"
+							class="form-control"
+							id="name"
+							name="name"
+							placeholder="Enter employee name"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="email">Employee Email</label>
+						<input
+							type="email"
+							class="form-control"
+							id="email"
+							name="email"
+							placeholder="Enter employee email"
+						/>
+					</div>
+					<div class="form-group">
+						<label for="email">Employee Phone</label>
+						<input
+							type="number"
+							class="form-control"
+							id="phone"
+							name="phone"
+							placeholder="Enter employee phone number"
+						/>
+					</div>
+					<button type="submit" class="btn btn-primary">Update Employee</button>
+				</form>
+			</main>
+		</div>
+	</body>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+		integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+		crossorigin="anonymous"
+	></script>
+	<script src="../assets/js/main.js"></script>
+</html>
